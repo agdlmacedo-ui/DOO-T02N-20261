@@ -21,37 +21,11 @@ public class Calculadora {
 
                 switch (opc) {
                     case 1:
-                        System.out.println("\nDigite a quantidade de Plantas desejadas:");
-                        int quantidade = teclado.nextInt();
-
-                        System.out.println("Digite o valor da planta escolhida: ");
-                        double valor = teclado.nextDouble();
-
-                        double valorTotal = quantidade * valor;
-                        
-                        System.out.println("\nPreço total: R$ " +valorTotal +"\n");
-
+                        calcularValorTotal(teclado);
                         break;
                     
                     case 2:
-                        System.out.println("\nDigite o valor da planta:");
-                        double valorPlanta = teclado.nextDouble();
-
-                        System.out.println("Digite o valor recebido: ");
-                        double valorRecebido = teclado.nextDouble();
-
-                        if(valorRecebido > valorPlanta){
-                            double valorTroco = valorRecebido - valorPlanta;             
-                            System.out.println("Valor do Troco: R$ " +valorTroco +"\n");
-                        }
-                        else if(valorRecebido < valorPlanta){
-                            double valorTroco = valorPlanta - valorRecebido;
-                            System.out.println("Valor Faltante: R$ "+valorTroco + "\n");
-                        }
-                        else{
-                            System.out.println("Pagamento Exato!\n");
-                        }
-
+                        calcularTroco(teclado);
                         break;
 
                     case 3:
@@ -67,4 +41,38 @@ public class Calculadora {
         teclado.close();
 
     }
+
+ public static void calcularValorTotal (Scanner teclado){
+    System.out.println("\nDigite a quantidade de Plantas desejadas:");
+    int quantidade = teclado.nextInt();
+
+    System.out.println("Digite o valor da planta escolhida: ");
+    double valor = teclado.nextDouble();
+
+    double valorTotal = quantidade * valor;
+                        
+    System.out.println("\nPreço total: R$ " +valorTotal +"\n");
+}
+
+public static void calcularTroco (Scanner teclado){
+
+    System.out.println("\nDigite o valor da planta:");
+    double valorPlanta = teclado.nextDouble();
+
+    System.out.println("Digite o valor recebido: ");
+    double valorRecebido = teclado.nextDouble();
+
+    if(valorRecebido > valorPlanta){
+        double valorTroco = valorRecebido - valorPlanta;             
+       System.out.println("Valor do Troco: R$ " +valorTroco +"\n");
+    }
+    else if(valorRecebido < valorPlanta){
+        double valorFaltante = valorPlanta - valorRecebido;
+        System.out.println("Valor Faltante: R$ "+valorFaltante + "\n");
+    }
+    else{
+        System.out.println("Pagamento Exato!\n");
+    }
+
+}
 }
