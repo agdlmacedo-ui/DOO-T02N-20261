@@ -4,7 +4,7 @@ O paradigma imperativo é um dos modelos mais tradicionais de programação, bas
 
 ## Programação Estrutural
 
-Com o tempo, surgiu a necessidade de tornar esses programas mais organizados e compreensíveis, dando origem à programação estruturada. Essas abordagem mantém os princípios do paradigma imperativo porém introduz uma forma mais organizada de desenvolver o código, evitando práticas que dificultavam a leitura, como o uso exessivo de desvio incondicionais, como o ***goto***, que permitia saltos arbitrários no código e tornavam o fluxo de execução difícil de acompanhar.
+Com o tempo, surgiu a necessidade de tornar esses programas mais organizados e compreensíveis, dando origem à programação estruturada. Essas abordagem mantém os princípios do paradigma imperativo porém introduz uma forma mais organizada de desenvolver o código, evitando práticas que dificultavam a leitura, como o uso excessivo de desvio incondicionais, como o ***goto***, que permitia saltos arbitrários no código e tornavam o fluxo de execução difícil de acompanhar.
 
 >goto: é um comando de controle de fluxo de baixo nível, presente em diversas linguagens de programação, que instrui o computador a "ir para" outra linha ou rótulo específico do código, ignorando a ordem sequencial normal de execução.
 
@@ -14,12 +14,12 @@ A programação estruturada baseia-se na utilização de três estruturas fundam
 2. Decisão
 3. Repetição
 
-A estrutura de decisão, geralmente representada pelo comando **if**, permite que o programa escolha diferentes caminhos de execução com base em uma condição. Já a estrutura de repetição com o comando **while**, possibitita que um bloco de código seja executado várias vezes enquanto uma determinada condição for verdade.
+A estrutura de decisão, geralmente representada pelo comando **if**, permite que o programa escolha diferentes caminhos de execução com base em uma condição. Já a estrutura de repetição com o comando **while**, possibilita que um bloco de código seja executado várias vezes enquanto uma determinada condição for verdade.
 
 ## Programação Procedural
-A partir dessa evolução, surge a programação procedural, que amplia ainda mais a organização do cógido ao dividi-lo em partes menores chamadas procedimentos ou funções, Essa abordagem permite que tarefas específicas sejam agrupadas em blocos reutilizáveis, tornando o programa mais modular e eficiente, além de melhorar sua legibilidade.
+A partir dessa evolução, surge a programação procedural, que amplia ainda mais a organização do código ao dividi-lo em partes menores chamadas procedimentos ou funções, Essa abordagem permite que tarefas específicas sejam agrupadas em blocos reutilizáveis, tornando o programa mais modular e eficiente, além de melhorar sua legibilidade.
 
- Outro ponto importante é que a programação procedural melhora a manutenção do sitema, pois alterações podem ser realizadas em partes esécíficas do código sem a necessidade de modificar o programa. Isso reduz a chance de erros e torna o processo de atualização mais rápido e seguro. Dessa forma, a reutilização de código também é favorecida, já que funções já existentes podem ser reaproveitadas em diferentes partes do sistema ou até em outros projetos, aumentando a produtividade no desenvolvimento.
+ Outro ponto importante é que a programação procedural melhora a manutenção do sistema, pois alterações podem ser realizadas em partes específicas do código sem a necessidade de modificar o programa. Isso reduz a chance de erros e torna o processo de atualização mais rápido e seguro. Dessa forma, a reutilização de código também é favorecida, já que funções já existentes podem ser reaproveitadas em diferentes partes do sistema ou até em outros projetos, aumentando a produtividade no desenvolvimento.
 
 
 ## Programação Orientada a Objetos
@@ -71,7 +71,7 @@ public class Soma {
 }
 ```
 
-Acima está um código em java, inicialmente eu defino os valores das váriaveis e o código compara as  váriaveis inteiras para ver se são maiores que 5 e caso sejam elas são somadas a váriavel soma e por fim eu imprimo o resultado na tela para mostrar ao usuário.
+Acima está um código em Java, inicialmente eu defino os valores das variáveis e o código compara as  variáveis inteiras para ver se são maiores que 5 e caso sejam elas são somadas a variável soma e por fim eu imprimo o resultado na tela para mostrar ao usuário.
 
 ## ProLog
 
