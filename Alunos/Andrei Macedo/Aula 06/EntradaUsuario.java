@@ -26,11 +26,12 @@ public class EntradaUsuario {
          do{
             System.out.println(" === Digite a opção desejada: === ");
             System.out.println("[1] Para realizar venda.");
-            System.out.println("[2] Mostrar histórico.");
+            System.out.println("[2] Mostrar histórico de vendas.");
             System.out.println("[3] Filtrar data.");
             System.out.println("[4] Cadastrar funcionário.");
             System.out.println("[5] Cadastrar cliente.");
             System.out.println("[6] Mostrar funcionários e clientes.");
+            System.out.println("[7] Para sair.");
             op = leia.nextInt();
             leia.nextLine();
             validar_escolha(op);
@@ -101,6 +102,11 @@ public class EntradaUsuario {
 
             case 6:
                 proc.chamar_listas();
+                break;
+
+            case 7:
+                System.out.println("Obrigado por usar o sistema.");
+                break;
 
             default:
                 System.out.println("Digite uma opção válida!");
